@@ -252,7 +252,7 @@ public class MainActivity extends GenericDisconnectedActivity  {
 
 
 	public void viewAllNotesDialog(){
-		Intent intent = new Intent(this, AllNotesActivity.class);
+		Intent intent = new Intent(this, NoteListActivity.class);
 		startActivity(intent);
 	}
 	
