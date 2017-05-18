@@ -1,0 +1,59 @@
+<!DOCTYPE HTML>
+<html xmlns ="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Framework Guru</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.2.0/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.2.0/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen" />
+
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.1/jquery.min.js"
+            th:src="@{/webjars/jquery/2.1.1/jquery.min.js}"></script>
+
+
+</head>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">E-Care</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a th:href="@{/mainPage}">AjouterPersonne</a></li>
+            <li><a class="active" th:href="@{/update}">Update</a></li>
+            <li><a th:href="@{/list}">List patient</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" ><span class="glyphicon glyphicon-user" ></span> <b th:text="${session.name}"></b></a></li>
+            <li><a  th:href="@{/logout}" method="get"><span class="glyphicon glyphicon-off"></span> logout</a></li>
+
+        </ul>
+    </div>
+</nav>
+
+<body>
+
+<table class="table">
+    <thead>
+    <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>idUser</th>
+        <th>symptome</th>
+        <th>note</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr th:each="lis : ${listPatient}">>
+        <td  th:text="${lis.nom} "></td>
+        <td  th:text="${lis.prenom} "></td>
+        <td  th:text="${lis.idUser} "></td>
+        <td  th:text="${lis.symptome} "></td>
+        <td  th:text="${lis.note} "></td>
+    </tr>
+
+    </tbody>
+</table>
+</body>
+</html>

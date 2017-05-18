@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_delete" android:title="@string/menu_delete" android:icon="@drawable/icon_menu_delete" android:showAsAction="ifRoom|withText" />
+    
+    <item android:id="@+id/menu_test_sensor_tension" android:title="Test Tension" />
+    <item android:id="@+id/menu_test_sensor_oxy" android:title="Test Oxy" />
+    <item android:id="@+id/menu_test_sensor_balance" android:title="Test Balance" />
+</menu>

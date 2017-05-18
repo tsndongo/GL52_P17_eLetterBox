@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+                android:id="@+id/rootElement" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_ecare" />
+    
+   	<ListView
+        android:id="@+id/listViewPatients"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+       	android:background="#e5e5e5" >
+    </ListView>
+
+    <include
+        android:id="@+id/include2"
+        android:layout_width="match_parent"
+        layout="@layout/include_mesure"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="87dp"
+        />
+
+    <Button
+        android:id="@+id/lastMeasureNoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_btn_new_white"
+        android:text="@string/btn_text_select_patient"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"/>
+
+
+</LinearLayout>

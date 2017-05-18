@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+	
+	<RelativeLayout
+	    android:id="@+id/lPatientName"
+	    android:layout_width="match_parent"
+	    android:layout_height="40sp"
+	    android:background="@color/gray_patientName"
+	    android:orientation="horizontal"
+	    android:visibility="gone" >
+
+	    <ImageView
+	        android:id="@+id/ivPatient"
+	        android:layout_width="16dp"
+	        android:layout_height="16dp"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="13sp"
+	        android:src="@drawable/icon_patient_white"
+	        android:contentDescription="@string/app_name" />
+	    	    
+	    <TextView
+	        android:id="@+id/tvPatientName"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="12sp"
+	        android:layout_toRightOf="@id/ivPatient"
+	        android:text="@string/text_patient"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="@color/white"
+	        android:textSize="18sp" />
+
+	    <Button
+	        android:id="@+id/PatientNoteButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="12sp"
+	        android:layout_toRightOf="@id/tvPatientName"
+	        android:layout_centerVertical="true"
+	        android:text="Note" />
+
+	</RelativeLayout>
+	
+	<RelativeLayout
+	    android:id="@+id/lError"
+	    android:layout_width="match_parent"
+	    android:layout_height="40sp"
+	    android:background="@color/header_error"
+	    android:orientation="horizontal"
+	    android:visibility="gone" >
+
+	    <ImageView
+	        android:id="@+id/ivError"
+	        android:layout_width="21dp"
+	        android:layout_height="21dp"
+	        android:layout_marginLeft="10sp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/icon_error_white"
+	        android:contentDescription="@string/app_name" />
+	        
+	    <ImageView
+	        android:id="@+id/ivBack"
+	        android:layout_width="35dp"
+	        android:layout_height="35dp"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/icon_back_white"
+	        android:contentDescription="@string/app_name" />
+	    	   	
+	    <TextView
+	        android:id="@+id/tvError"
+	        android:layout_width="970dp"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_gravity="center"
+	        android:layout_marginLeft="10sp"
+	        android:layout_toLeftOf="@id/ivBack"
+	        android:layout_toRightOf="@id/ivError"
+	        android:text="@string/text_error"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="@color/white"
+	        android:textSize="18sp" />
+
+	</RelativeLayout>
+	
+	
+	<RelativeLayout
+	    android:id="@+id/lWarning"
+	    android:layout_width="match_parent"
+	    android:layout_height="40sp"
+	    android:background="@color/header_warning"
+	    android:orientation="horizontal"
+	    android:visibility="gone" >
+
+	    <ImageView
+	        android:id="@+id/ivWarning"
+	        android:layout_width="21dp"
+	        android:layout_height="21dp"
+	        android:layout_marginLeft="10sp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/icon_warning_white"
+	        android:contentDescription="@string/app_name" />
+	        
+	    <TextView
+	        android:id="@+id/tvWarning"
+	        android:layout_width="970dp"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_centerVertical="true"
+	        android:layout_gravity="center"
+	        android:layout_marginLeft="10sp"
+	        android:textSize="18sp"
+	        android:layout_toRightOf="@id/ivWarning"
+	        android:text="@string/text_clic_action"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="@color/black" />
+
+	</RelativeLayout>
+	
+	
+	<RelativeLayout
+	    android:id="@+id/lNotice"
+	    android:layout_width="match_parent"
+	    android:layout_height="40sp"
+	    android:background="@color/header_notice"
+	    android:orientation="horizontal"
+	    android:visibility="gone" >
+
+	    <ImageView
+	        android:id="@+id/ivNotice"
+	        android:layout_width="21dp"
+	        android:layout_height="21dp"
+	        android:layout_marginLeft="10sp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/icon_info_white"
+	        android:contentDescription="@string/app_name" />
+	        
+	    <TextView
+	        android:id="@+id/tvNotice"
+	        android:layout_width="970dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center"
+	        android:layout_alignParentRight="true"
+	        android:layout_toRightOf="@id/ivNotice"
+	        android:layout_marginLeft="10sp"
+	        android:layout_centerVertical="true"
+	        android:text="@string/text_header_wait"
+       		android:textColor="@color/black"
+	        android:textSize="18sp"
+	        android:textAppearance="?android:attr/textAppearanceMedium" />
+	</RelativeLayout>
+	
+		
+	<RelativeLayout
+	    android:id="@+id/lAlert1"
+	    android:layout_width="match_parent"
+	    android:layout_height="40sp"
+	    android:background="@color/header_alert1"
+	    android:orientation="horizontal"
+	    android:visibility="gone" >
+
+	    <ImageView
+	        android:id="@+id/ivAlert1"
+	        android:layout_width="21dp"
+	        android:layout_height="21dp"
+	        android:layout_marginLeft="10sp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/icon_warning_white"
+	        android:contentDescription="@string/app_name" />
+	        
+	    <TextView
+	        android:id="@+id/tvAlert1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_gravity="center"
+	        android:layout_marginLeft="10sp"
+	        android:layout_toRightOf="@id/ivAlert1"
+	        android:text="@string/text_alert1"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="@color/white"
+	        android:textSize="18sp" />
+	    
+	    <Button
+	        android:id="@+id/HeaderAlert1NoteButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="12sp"
+	        android:layout_toRightOf="@id/tvAlert1"
+	        android:layout_centerVertical="true"
+	        android:text="Note" />
+	    
+	</RelativeLayout>
+	
+	<RelativeLayout
+	    android:id="@+id/lAlert2"
+	    android:layout_width="match_parent"
+	    android:layout_height="40sp"
+	    android:background="@color/header_alert2"
+	    android:orientation="horizontal"
+	    android:visibility="gone" >
+
+	    <ImageView
+	        android:id="@+id/ivAlert2"
+	        android:layout_width="21dp"
+	        android:layout_height="21dp"
+	        android:layout_marginLeft="10sp"
+	        android:layout_centerVertical="true"
+	        android:src="@drawable/icon_warning_white"
+	        android:contentDescription="@string/app_name" />
+	        
+	    <TextView
+	        android:id="@+id/tvAlert2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_gravity="center"
+	        android:layout_marginLeft="10sp"
+	        android:layout_toRightOf="@id/ivAlert2"
+	        android:text="@string/text_alert2"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="@color/black"
+	        android:textSize="18sp" />
+	    
+	    <Button
+	        android:id="@+id/HeaderAlert2NoteButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="12sp"
+	        android:layout_toRightOf="@id/tvAlert2"
+	        android:layout_centerVertical="true"
+	        android:text="Note" />
+	    
+	</RelativeLayout>
+	
+	<RelativeLayout
+	    android:id="@+id/lAlert3"
+	    android:layout_width="match_parent"
+	    android:layout_height="40sp"
+	    android:background="@color/header_alert3"
+	    android:orientation="horizontal"
+	    android:visibility="gone" >
+
+	    <ImageView
+	        android:id="@+id/ivAlert3"
+	        android:layout_width="21dp"
+	        android:layout_height="21dp"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10sp"
+	        android:src="@drawable/icon_warning_white"
+	        android:contentDescription="@string/app_name" />
+	        
+	    <TextView
+	        android:id="@+id/tvAlert3"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_gravity="center"
+	        android:layout_marginLeft="10sp"
+	        android:layout_toRightOf="@id/ivAlert3"
+	        android:text="@string/text_alert3"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="@color/black"
+	        android:textSize="18sp" />
+	    
+	    <Button
+	        android:id="@+id/HeaderAlert3NoteButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="12sp"
+	        android:layout_toRightOf="@id/tvAlert3"
+	        android:layout_centerVertical="true"
+	        android:text="Note" />
+	    
+	</RelativeLayout>
+	
+	<RelativeLayout
+	    android:id="@+id/lAlert4"
+	    android:layout_width="match_parent"
+	    android:layout_height="40sp"
+	    android:background="@color/header_alert4"
+	    android:orientation="horizontal"
+	    android:visibility="gone" >
+
+	    <ImageView
+	        android:id="@+id/ivAlert4"
+	        android:layout_width="21dp"
+	        android:layout_height="21dp"
+	        android:layout_centerVertical="true"
+	        android:layout_marginLeft="10sp"
+	        android:src="@drawable/icon_error_white"
+	        android:contentDescription="@string/app_name" />
+	        
+	    <TextView
+	        android:id="@+id/tvAlert4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_gravity="center"
+	        android:layout_marginLeft="10sp"
+	        android:layout_toRightOf="@id/ivAlert4"
+	        android:text="@string/text_alert4"
+	        android:textAppearance="?android:attr/textAppearanceMedium"
+	        android:textColor="@color/white"
+	        android:textSize="18sp" />
+	    
+	    <Button
+	        android:id="@+id/HeaderAlert4NoteButton"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_marginLeft="12sp"
+	        android:layout_toRightOf="@id/tvAlert4"
+	        android:layout_centerVertical="true"
+	        android:text="Note" />
+	    
+	</RelativeLayout>
+	
+</LinearLayout>

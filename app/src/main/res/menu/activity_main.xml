@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"> 
+    <!-- item android:id="@+id/menu_bt" android:title="@string/menu_bt" android:icon="@drawable/ic_volume_bluetooth_in_call" ></item>
+    <item android:id="@+id/menu_synchro" android:title="Synchronisation" /-->
+    <item android:id="@+id/mode_test" android:title="Mode Test" android:showAsAction="ifRoom|withText"/>
+    <item android:id="@+id/menu_about" android:title="A Propos" />
+    <item android:id="@+id/view_all_notes" android:title="Voir les notes" android:showAsAction="ifRoom|withText"></item>
+</menu>

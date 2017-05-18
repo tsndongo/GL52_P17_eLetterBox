@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+			  android:orientation="vertical"
+			  android:layout_width="fill_parent"
+			  android:layout_height="fill_parent"
+	>
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/header_ecare" />
+
+    
+    <include
+        android:id="@+id/include2"
+        android:layout_width="match_parent"
+    layout="@layout/include_mesure"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10sp"
+        android:layout_marginRight="10sp" />
+
+    <RelativeLayout
+		android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        
+	    <RelativeLayout
+	        android:id="@+id/rlAlert4Info"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginTop="50sp"
+	        android:layout_marginLeft="90sp"
+	        android:layout_marginRight="90sp"
+	        android:background="@drawable/background_rectangle_alert4_info"
+	        android:padding="25sp"
+        	android:visibility="gone" >
+	
+	        
+	        <ImageView
+	            android:id="@+id/imageView1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/icon_info_alert4"
+	            android:contentDescription="@string/app_name"
+	             />
+	        
+	        <TextView
+				android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:text="@string/text_measure_alert4_info"
+	            android:textSize="25sp"
+	            android:textColor="@color/header_alert4" />
+
+	
+	    </RelativeLayout>
+	    
+	    <RelativeLayout
+	        android:id="@+id/rlAlert3Info"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_marginTop="50sp"
+	        android:layout_marginLeft="90sp"
+	        android:layout_marginRight="90sp"
+	        android:background="@drawable/background_rectangle_alert3_info"
+	        android:padding="25sp"
+        	android:visibility="gone" >
+	
+	        
+	        <ImageView
+	            android:id="@+id/imageView2"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:src="@drawable/icon_info_alert3"
+	            android:contentDescription="@string/app_name"
+	            android:layout_marginRight="10sp" />
+	        
+	        <TextView
+				android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_centerHorizontal="true"
+	            android:layout_centerVertical="true"
+	            android:layout_toRightOf="@id/imageView2"
+	            android:text="@string/text_measure_alert3_info"
+	            android:textSize="25sp"
+	            android:textColor="@color/header_alert3" />
+
+	
+	    </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/measureNoteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/include2"
+        android:layout_alignRight="@+id/include2"
+        android:layout_marginBottom="12dp"
+        android:layout_marginRight="142dp"
+        android:text="Note" />
+
+</LinearLayout>

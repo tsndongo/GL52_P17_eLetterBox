@@ -1,0 +1,4 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_update" android:title="@string/menu_update" android:icon="@android:drawable/ic_menu_rotate" android:showAsAction="ifRoom|withText"/>
+    <item android:id="@+id/menu_reboot" android:title="@string/menu_reboot" android:icon="@drawable/icon_menu_close"/>
+</menu>

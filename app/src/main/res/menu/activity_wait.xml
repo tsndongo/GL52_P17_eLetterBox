@@ -1,0 +1,7 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mode_test" android:title="Mode Test" android:showAsAction="ifRoom|withText"/>
+    <item android:id="@+id/menu_graph" android:title="@string/menu_graph" android:icon="@drawable/icon_menu_graph" android:showAsAction="ifRoom|withText"/>
+    <item android:id="@+id/menu_alert" android:title="@string/menu_alert" android:icon="@drawable/icon_menu_alert" android:showAsAction="ifRoom|withText"/>
+    <item android:id="@+id/menu_deco" android:title="@string/menu_deco" android:icon="@drawable/icon_menu_disconnect" android:showAsAction="ifRoom|withText"/>
+</menu>
+ 

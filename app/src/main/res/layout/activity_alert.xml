@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:id="@+id/rootElement" >
+    
+        <include
+        android:id="@+id/include1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/header_ecare" />
+
+
+
+        <RelativeLayout
+            android:id="@+id/filtersView"
+            android:layout_width="300sp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_below="@id/include1"
+			android:background="#e5e5e5"
+			android:padding="20sp">
+
+            <TextView
+                android:id="@+id/tvFilterTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="40sp"
+                android:text="@string/title_alert_filter"
+                android:textSize="28sp" />
+
+            <ScrollView
+	            android:id="@+id/scrollView"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_below="@+id/tvFilterTitle"
+	            android:layout_alignParentBottom="true" >
+
+                <LinearLayout
+		            android:layout_width="match_parent"
+		            android:layout_height="wrap_content"
+		            android:orientation="vertical">
+
+	                <CheckBox
+		                android:id="@+id/cbFilterOxy"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:checked="true"
+		                android:text="@string/sensor_legend_oxy"
+		                android:textSize="22sp"
+		                android:layout_marginBottom="20sp" />
+		            <CheckBox
+		                android:id="@+id/cbFilterWeight"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:checked="true"
+		                android:text="@string/sensor_legend_poids"
+		                android:textSize="22sp"
+		                android:layout_marginBottom="20sp" />
+		            <CheckBox
+		                android:id="@+id/cbFilterPressure"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:checked="true"
+		                android:text="@string/sensor_legend_tension"
+		                android:textSize="22sp"
+		                android:layout_marginBottom="20sp" />
+		            <CheckBox
+		                android:id="@+id/cbFilterCardio"
+		                android:layout_width="match_parent"
+		                android:layout_height="wrap_content"
+		                android:checked="true"
+		                android:text="@string/sensor_legend_cardio"
+		                android:textSize="22sp"
+		                android:layout_marginBottom="20sp" />
+
+		        </LinearLayout>
+
+
+            </ScrollView>
+
+
+
+        </RelativeLayout>
+
+
+
+        <ScrollView
+            android:id="@id/scrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/include1"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/filtersView" >
+   
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+		        <TableLayout
+		            android:id="@+id/tableAlertes"
+		            android:layout_width="match_parent"
+		            android:layout_height="match_parent" >
+		        </TableLayout>
+
+			</LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

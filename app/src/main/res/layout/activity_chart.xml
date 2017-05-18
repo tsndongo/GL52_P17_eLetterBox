@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:id="@+id/rootElement" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/header_ecare" />
+
+    <LinearLayout
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:orientation="horizontal"
+        android:layout_below="@+id/include1">
+
+        <Spinner
+            android:id="@+id/spinnerSensor"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="10sp"
+            android:spinnerMode="dropdown" 
+            android:background="@drawable/bg_spinner2" />
+        <!--  android:background="@drawable/spinner_bg_white" -->
+
+        <Spinner
+            android:id="@+id/spinnerPeriod"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:layout_margin="10sp"
+            android:spinnerMode="dropdown"
+            android:background="@drawable/bg_spinner2" />
+    </LinearLayout>
+	
+    <LinearLayout
+        android:id="@+id/viewGraph"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/view2" />
+
+</RelativeLayout>

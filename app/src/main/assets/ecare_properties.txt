@@ -1,0 +1,9 @@
+#Configuration de l'application ecare
+
+# l'adresse ip du serveur
+constant.url.host=test
+
+
+# menu debug, ne pas afficher si c'est a False
+
+menu_debug_enable=true

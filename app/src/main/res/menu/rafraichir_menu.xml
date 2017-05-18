@@ -1,0 +1,4 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_rafraichir" android:title="@string/menu_rafraichir" android:icon="@drawable/icon_menu_disconnect" android:showAsAction="ifRoom|withText"/>
+</menu>
+ 

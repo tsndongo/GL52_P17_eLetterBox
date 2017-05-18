@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true"
+    android:id="@+id/rootElement" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/header_ecare" />
+
+
+    <TextView
+        android:id="@+id/notesVocalesTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/title_debug_panel"
+        android:textSize="35sp"
+        android:layout_below="@+id/include1" />
+
+    <Button
+        android:id="@+id/buttonClearDatabase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/notesVocalesTextView"
+        android:layout_marginTop="10sp"
+        android:text="@string/btn_clear_database" />
+    
+    <Button
+        android:id="@+id/buttonReSynchronize"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonClearDatabase"
+        android:layout_marginTop="10sp"
+        android:text="@string/btn_resynchronize" />
+
+    <Spinner
+        android:id="@+id/spinnerBipSound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonAskSu"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_spinner2" />
+
+    <Button
+        android:id="@+id/buttonPlaySound"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/spinnerBipSound"
+        android:layout_toRightOf="@+id/spinnerBipSound"
+        android:text="@string/btn_debug_play_sound" />
+
+    <Button
+        android:id="@+id/buttonAskSu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/buttonReSynchronize"
+        android:text="Demander les droits Super Utilisateur" />
+
+</RelativeLayout>

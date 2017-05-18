@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="1" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_column="0"
+                android:layout_gravity="center_horizontal|top"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_row="0"
+                android:gravity="center"
+                android:text="Voir note"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/black" />
+
+        </GridLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/noteTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="note text view"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/noteDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:text="note date text view"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/rerecordNoteButton"
+            android:maxWidth="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:text="Prendre une note"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/deleteNoteButton"
+            android:maxWidth="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="10sp"
+            android:text="Supprimer"
+            android:visibility = "invisible" />
+
+        <Button
+            android:id="@+id/keyboardEditNoteButton"
+            android:maxWidth="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="10sp"
+            android:text="Editer au clavier"
+            android:visibility = "invisible" />
+
+        <Button
+            android:id="@+id/completeNoteButton"
+            android:maxWidth="60dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:text="Compléter"
+            android:textSize="10sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+
+    <GridLayout
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|top"
+        android:columnCount="1" >
+
+        <Button
+            android:id="@+id/cancelDialogButton"
+            android:layout_width="75dp"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="left|top"
+            android:layout_marginBottom="10dp"
+            android:layout_row="0"
+            android:text="Annuler"
+            android:textSize="10sp" />
+
+        <Button
+            android:id="@+id/saveDialogButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_gravity="right|top"
+            android:layout_marginBottom="10dp"
+            android:layout_row="0"
+            android:text="Sauvegarder"
+            android:textSize="10sp" />
+
+    </GridLayout>
+
+</LinearLayout>

@@ -1,0 +1,50 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 21
+    buildToolsVersion "24.0.2"
+
+    defaultConfig {
+        applicationId "com.semantic.ecare_android_v2"
+        minSdkVersion 14
+        targetSdkVersion 21
+        compileOptions {
+            sourceCompatibility JavaVersion.VERSION_1_7
+            targetCompatibility JavaVersion.VERSION_1_7
+        }
+    }
+    sourceSets {
+        main {
+            jni.srcDirs = []
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+    }
+    splits {
+        abi {
+            enable true
+            reset()
+            include 'x86', 'armeabi-v7a'
+            universalApk true
+        }
+    }
+}
+
+dependencies {
+
+    compile 'com.android.support:support-v4:19.1.0'
+    compile group: 'org.achartengine', name: 'achartengine', version: '1.2.0'
+    compile 'com.squareup.okhttp3:okhttp:3.5.0'
+    repositories {
+        maven {
+            url "https://repository-achartengine.forge.cloudbees.com/snapshot/"
+        }
+    }
+}

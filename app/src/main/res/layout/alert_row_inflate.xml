@@ -1,0 +1,98 @@
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp" >
+
+
+     	<LinearLayout
+     	    android:layout_width="match_parent"
+     	    android:layout_height="wrap_content"
+     	    android:orientation="vertical"
+     	    android:layout_weight="1">
+
+  		<LinearLayout
+  		    android:layout_width="match_parent"
+  		    android:layout_height="0dip"
+  		    android:orientation="horizontal"
+     	    android:layout_weight="1" >
+
+	        <LinearLayout
+	            android:id="@+id/bgAlert"
+	            android:layout_width="30sp"
+	            android:layout_height="fill_parent"
+	            android:layout_marginLeft="2sp"
+	            android:layout_marginRight="5sp"
+	            android:layout_marginTop="5sp"
+	            android:gravity="center"
+	            android:background="@color/header_alert4">
+	            
+	            <ImageView
+	                android:id="@+id/ivAlert"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:contentDescription="@string/app_name"
+	                android:src="@drawable/icon_error_white" />
+	            
+	        </LinearLayout>
+	        	        
+		       <RelativeLayout
+		           android:layout_width="match_parent"
+		           android:layout_height="wrap_content"
+		           android:padding="15sp">
+
+		           <TextView
+		               android:id="@+id/tvSensor"
+		               android:layout_width="match_parent"
+		               android:layout_height="wrap_content"
+		               android:layout_alignParentLeft="true"
+		               android:layout_marginBottom="10sp"
+		               android:gravity="center_vertical"
+		               android:text="@string/sample_alert_sensor"
+		               android:textColor="@color/ecare_gray"
+		               android:textSize="22sp" />
+		           			           
+		           <TextView
+		               android:id="@+id/tvMessage"
+		               android:layout_width="match_parent"
+		               android:layout_height="wrap_content"
+		               android:layout_alignParentLeft="true"
+		               android:layout_below="@+id/tvSensor"
+		               android:gravity="center_vertical"
+		               android:text="@string/sample_alert_detail"
+		               android:textColor="@color/ecare_gray"
+		               android:textSize="22sp" />
+		           
+		           <TextView
+		               android:id="@+id/tvDate"
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:layout_alignParentRight="true"
+		               android:gravity="center_vertical|right"
+		               android:text="@string/sample_alert_date"
+		               android:textColor="@color/ecare_gray"
+		               android:textSize="22sp" />
+
+		           <Button
+		               android:id="@+id/alertNoteButton"
+		               android:layout_width="wrap_content"
+		               android:layout_height="wrap_content"
+		               android:layout_alignTop="@+id/tvSensor"
+		               android:layout_marginRight="52dp"
+		               android:layout_toLeftOf="@+id/tvDate"
+		               android:text="Note" />
+		           			           
+		       </RelativeLayout>
+
+		</LinearLayout>
+	
+		<LinearLayout
+		    android:id="@+id/bgAlert2"
+		    android:layout_width="match_parent"
+		    android:layout_height="1sp"
+		    android:layout_marginLeft="2sp"
+		    android:background="@color/header_alert4"
+		    android:orientation="vertical" />
+
+	</LinearLayout>
+</TableRow>

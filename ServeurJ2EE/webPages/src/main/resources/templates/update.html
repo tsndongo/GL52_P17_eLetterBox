@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html xmlns ="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Spring Framework Guru</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+
+    <link href="http://cdn.jsdelivr.net/webjars/bootstrap/3.2.0/css/bootstrap.min.css"
+          th:href="@{/webjars/bootstrap/3.2.0/css/bootstrap.min.css}"
+          rel="stylesheet" media="screen" />
+
+    <script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.1/jquery.min.js"
+            th:src="@{/webjars/jquery/2.1.1/jquery.min.js}"></script>
+
+
+</head>
+<nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">E-Care</a>
+        </div>
+        <ul class="nav navbar-nav">
+            <li><a th:href="@{/mainPage}">AjouterPersonne</a></li>
+            <li><a class="active" th:href="@{/update}">Update</a></li>
+            <li><a th:href="@{/list}">List patient</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" ><span class="glyphicon glyphicon-user" ></span> <b th:text="${session.name}"></b></a></li>
+            <li><a  th:href="@{/logout}" method="get"><span class="glyphicon glyphicon-off"></span> logout</a></li>
+
+        </ul>
+    </div>
+</nav>
+<div>
+    <b th:text="${session.token}">ID</b>
+</div>
+<body>
+
+
+<form id="testForm" class="form-horizontal" role="form"  th:action="@{/updateNom}" th:object="${carac}" method="post">
+
+    <div style="margin-bottom: 25px" class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+        <input id="nom" type="text" class="form-control" name="name" value="" placeholder="nom" th:field="*{nom}" > </input>
+    </div>
+
+    <div style="margin-bottom: 25px" class="input-group">
+        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+        <input id="prenom" type="text" class="form-control" name="password" placeholder="note" th:field="*{note}" />
+    </div>
+    <div style="margin-top:10px" class="form-group">
+
+        <div class="col-sm-12 controls">
+            <input type="submit" id="btn-login" href="#" class="btn btn-success">  </input>
+        </div>
+    </div>
+</form>
+
+</body>
+</html>

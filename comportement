@@ -1,0 +1,20 @@
+AU lancement l'app lance splash screen qui afficher "chargement en cours"
+splash screen lance le service eCare Service
+Ecare service lance dans un la fonction get de BuilderPatientList
+    Cette fonction get lance un thread et vas chercher dans la BDD pendant que EcareService attend grace a unn listenner (ce service chek si il y a une BDD externe)
+Lorsque cela est terminer la fonction EcareService::endOgGetPatientFromLocalDb (grace au listenner)
+
+
+
+
+
+
+
+
+
+
+
+
+
+ATTENTION:
+

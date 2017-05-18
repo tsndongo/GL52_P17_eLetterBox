@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">E-Care</string>
+    <string name="menu_reboot">Redémarrer</string>
+    <string name="menu_update">Raffraichir</string>
+    <string name="menu_delete">Supprimer</string>
+    <string name="menu_back">Retour</string>
+    <string name="menu_close">Fermer</string>
+    <string name="menu_debug">Panneau de débug</string>
+    <string name="menu_deco">Terminer</string>
+    <string name="menu_graph">Mesures</string>
+    <string name="menu_alert">Alertes</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_splash_screen">E-Care</string>
+    <string name="title_debug_panel">Panneau de débogage</string>
+    <string name="loading">Chargement en cours</string>
+    <string name="text_clic_action">Attention, Cliquez ici pour faire une action</string>
+    <string name="text_error">Erreur .. ..</string>
+    <string name="text_error_text">Détail de l\'erreur</string>
+    <string name="text_patient">Identité du Patient</string>
+    <string name="text_alert1">Alerte de niveau Faible</string>
+    <string name="text_alert2">Alerte de niveau Modéré</string>
+    <string name="text_alert3">Alerte de niveau Elevé</string>
+    <string name="text_alert4">Alerte de niveau Critique !</string>
+    <string name="text_no_mesure">Pas de mesure disponible</string>
+    <string name="text_no_alert">Pas d\'alerte disponible</string>
+    <string name="text_header_wait">En attente de réception de mesure</string>
+    <string name="text_last_measures">Dernières Mesures :</string>
+    <string name="text_about_version_label">Version de l\'application : </string>
+    <string name="text_about_version_dummy">######</string>
+    <string name="text_measure_alert4_info">Appeler le centre de soins au 0811 911 911</string>
+    <string name="text_measure_alert3_info">- Refaites les mesures dans les bonnes conditions.\n- Est-ce que vous avez bien pris vos médicaments ?\n- Si les symptômes persistent, appelez le centre de soins au 0811 911 911.</string>
+    <string name="menu_rafraichir">Rafraichir</string>
+    <string name="text_about1">Le Projet E-Care est un projet des investissements d\'avenir, e-santé</string>
+    <string name="title_alert_filter">Filtrer les alertes</string>
+    <string name="btn_clear_database">Vider la base de données</string>
+    <string name="btn_resynchronize">Re-Synchroniser les mesures</string>
+    <string name="btn_debug_play_sound">Jouer</string>
+    <string name="btn_text_select_patient">Sélectionnez un patient</string>
+    <string name="sample_mesure_value">## %Sp0₂</string>
+    <string name="sample_mesure_Date">DD/MM/YYYY - HH:ii</string>
+    <string name="sample_alert_time_span">Aujourd\'hui (##)</string>
+    <string name="sample_alert_time_date">Mercredi 21 Novembre 2012</string>
+    <string name="sample_alert_sensor">Pression Systolique : 145 mmHg</string>
+    <string name="sample_alert_detail">Valeur trop élevée !</string>
+    <string name="sample_alert_date">21/11/2012 \- 9h18</string>
+    <string name="toast_disable_ssp">Mode SSP désactivé</string>
+    <string name="toast_binaries_copied">Binaires Copiés</string>
+    <string name="sample_info_detail">E-care Telemonitoring System.</string>
+    <string name="sensor_unit_oxy">%Sp0₂</string>
+    <string name="sensor_unit_tension">mmHg</string>
+    <string name="sensor_unit_cardio">bpm</string>
+    <string name="sensor_unit_poids">kg</string>
+    <string name="sensor_unit_temperature">°C</string>
+    <string name="sensor_title_cardio">Fréquence Cardiaque</string>
+    <string name="sensor_title_tension">Pression Artérielle</string>
+    <string name="sensor_title_tension_sys">Pression Systolique</string>
+    <string name="sensor_title_tension_dia">Pression Diastolique</string>
+    <string name="sensor_title_oxy">Saturation en Dioxygène</string>
+    <string name="sensor_title_poids">Poids</string>
+    <string name="sensor_legend_cardio">Fréquence Cardiaque</string>
+    <string name="sensor_legend_tension">Pression Artérielle</string>
+    <string name="sensor_legend_tension_sys">Pression Systolique</string>
+    <string name="sensor_legend_tension_dia">Pression Diastolique</string>
+    <string name="sensor_legend_oxy">Saturation en O₂</string>
+    <string name="sensor_legend_poids">Poids</string>
+    <string name="sensor_name_cardio">"Cardiomètre"</string>
+    <string name="sensor_name_tension">"Tensiomètre"</string>
+    <string name="sensor_name_oxy">"Oxymètre"</string>
+    <string name="sensor_name_poids">Balance</string>
+    <string name="sensor_name_undefined">Capteur non défini</string>
+    <string name="message_alert_set_patient">Pour continuer, vous devez sélectionner un patient !</string>
+    <string name="message_alert_newMeasure">Attention, cette mesure a remplacé une ancienne mesure du même type !</string>
+    <string name="message_alert_set_patient_error">ATTENTION, Vous devez sélectionner un patient pour sauvegarder les données !!!</string>
+    <string name="error_measure_saving">Une erreur est survenue lors de l\'enregistrement de la mesure !</string>
+    <string name="dialog_reboot_title">Redémarrage de la tablette</string>
+    <string name="dialog_reboot_content">Êtes-vous sûr de vouloir redémarrer la tablette</string>
+    <string name="dialog_reboot_yes">Oui</string>
+    <string name="dialog_reboot_no">Non</string>
+    <string name="bool_true">true</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="gray_patientName">#333333</color>
+    <color name="ecare_gray">#454646</color>
+    <color name="header_error">#E80C22</color>
+    <color name="header_warning">#F5E264</color>
+    <color name="header_notice">#3fc2f8</color>
+    <color name="header_alert1">#11831c</color>
+    <color name="header_alert2">#fddb3b</color>
+    <color name="header_alert3">#e78902</color>
+    <color name="header_alert4">#bc0101</color>
+
+    <string name="title_activity_about">A Propos</string>
+    <string name="svn_version">148:910M</string>
+    <string name="wifi_disconnecte">Vous n\'êtes pas connecté</string>
+    <string name="verification">Vérifiez votre connexion Internet (Wifi,3G,4G)</string>
+    <string name="tablet_unsuportted">Tablette non reconnue</string>
+    <string name="tablet_unactivad">Tablette non activée</string>
+    <string name="contacte_admin">Contactez votre administarateur</string>                               
+    <string name="tablet_unaffected">Tablette non affectée </string>
+    <string name="server_stop">Serveur n\'est pas démarré</string>
+    <string name="info_admin">Contacte :\n
+                              Tel : 03 89 32 96 96 \n
+                              Email: info@newel.net \n
+                              Adresse : 36, rue Paul Cézanne 68200 Mulhouse</string>
+    <string name="serverAdresse">192.168.43.44</string>
+
+
+</resources>

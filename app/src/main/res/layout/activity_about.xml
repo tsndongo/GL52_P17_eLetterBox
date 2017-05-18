@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootElement"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10sp"
+    tools:context=".AboutActivity" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        layout="@layout/header_ecare" />
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/include1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20sp"
+        android:text="@string/title_activity_about"
+        android:textSize="35sp" />
+
+    <TextView
+        android:id="@+id/tvVersionLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/tvTitle"
+        android:text="@string/text_about_version_label"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tvVersion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTitle"
+        android:layout_toRightOf="@id/tvVersionLbl"
+        android:text="@string/text_about_version_dummy"
+        android:textSize="20sp" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvVersionLbl"
+        android:layout_marginTop="100dp" >
+
+        <TextView
+            android:id="@+id/notesVocalesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="@string/text_about1"
+            android:textSize="30sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_investissement_avenir" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="90sp"
+            android:layout_height="120sp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_caisses_des_depots" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="150dp"
+        android:background="@color/white"
+        android:padding="20sp" >
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="190sp"
+            android:layout_height="150sp"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_partenaire_centich" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="150sp"
+            android:layout_height="120sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40sp"
+            android:contentDescription="@string/app_name"
+            android:layout_toRightOf="@id/imageView3"
+            android:src="@drawable/logo_partenaire_hus" />
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="150sp"
+            android:layout_height="150sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40sp"
+            android:layout_toRightOf="@id/imageView4"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_partenaire_mfam" />
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="200sp"
+            android:layout_height="150sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40sp"
+            android:layout_toRightOf="@+id/imageView5"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_partenaire_newel" />
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="150sp"
+            android:layout_height="120sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40sp"
+            android:layout_toRightOf="@+id/imageView6"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_partenaire_uha" />
+        <ImageView
+            android:layout_width="170sp"
+            android:layout_height="150sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="40sp"
+            android:layout_toRightOf="@+id/imageView7"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/logo_partenaire_utbm" />
+    </RelativeLayout>
+
+</RelativeLayout>

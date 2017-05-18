@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.semantic.ecare_android_v2.ui.NoPatientActivity" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@id/listViewPatients" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20sp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/baren" />
+
+         <TextView
+            android:id="@+id/wificonnect"
+            android:layout_width="500dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:lines="3"
+            android:text="@string/tablet_unactivad"
+            android:textSize="25dp" 
+            android:textStyle="bold"
+            />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/notesVocalesTextView"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/warning" />
+
+        <TextView
+            android:id="@+id/noteTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wificonnect"
+            android:layout_centerHorizontal="true"
+            android:text="@string/contacte_admin"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/notesVocalesTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/noteTextView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="46dp"
+            android:gravity="center"
+            android:maxLines="10"
+            android:text="@string/info_admin"
+            android:textSize="20dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

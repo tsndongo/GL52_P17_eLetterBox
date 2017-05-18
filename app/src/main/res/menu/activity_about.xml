@@ -1,0 +1,4 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:id="@+id/menu_close" android:title="@string/menu_close" android:icon="@android:drawable/ic_menu_close_clear_cancel" android:showAsAction="ifRoom|withText"></item>
+  <item android:id="@+id/menu_debug" android:title="@string/menu_debug"></item>
+</menu>

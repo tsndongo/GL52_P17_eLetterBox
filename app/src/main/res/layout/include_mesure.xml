@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:padding="15sp"
+            android:src="@drawable/icon_arrow_left"
+            android:visibility="visible" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="250sp"
+            android:layout_alignParentTop="true"
+            android:layout_toLeftOf="@+id/iv_right"
+            android:layout_toRightOf="@+id/iv_left"
+            android:background="#CECECE"
+            android:padding="25sp" >
+
+            <ImageView
+                android:id="@+id/iv_sensor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+            	android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_sensor_oxy" />
+
+
+
+            <ImageView
+                android:id="@+id/iv_comp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="5dp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/icon_comp_up" />
+
+            <TextView
+                android:id="@+id/tv_measure_value"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/iv_comp"
+                android:layout_toRightOf="@id/iv_sensor"
+                android:gravity="center"
+                android:text="@string/sample_mesure_value"
+                android:textColor="@color/ecare_gray"
+                android:textSize="90sp" />
+            
+            <TextView
+                android:id="@+id/tvDate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_measure_value"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@id/tv_measure_value"
+                android:gravity="center"
+                android:text="@string/sample_mesure_Date"
+                android:textColor="@color/ecare_gray"
+                android:textSize="30sp" />
+
+        </RelativeLayout>
+        
+        <ImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/app_name"
+            android:padding="15sp"
+            android:src="@drawable/icon_arrow_right"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+
+ 
+</RelativeLayout>

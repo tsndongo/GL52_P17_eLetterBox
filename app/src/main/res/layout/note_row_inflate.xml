@@ -1,0 +1,91 @@
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10sp" >
+
+   	<LinearLayout
+   	    android:layout_width="match_parent"
+   	    android:layout_height="50dp"
+   	    android:layout_marginBottom="0dp"
+   	    android:layout_weight="1"
+   	    android:orientation="horizontal" >
+    			   
+   	    <TextView
+   	        android:id="@+id/tvNoteTargetType"
+   	        android:layout_width="wrap_content"
+   	        android:layout_height="wrap_content"
+   	        android:layout_alignParentLeft="true"
+   	        android:layout_marginLeft="10dp"
+   	        android:gravity="center_vertical"
+   	        android:maxWidth="90dp"
+   	        android:minWidth="90dp"
+   	        android:text="Mesure"
+   	        android:textColor="@color/ecare_gray"
+   	        android:textSize="22sp" />
+   	    
+   	    	<View
+   	    	    android:layout_width="1dp"
+   	    	    android:layout_height="40dp"
+   	    	    android:layout_gravity="center_vertical"
+   	    	    android:layout_marginLeft="5dp"
+   	    	    android:layout_marginRight="5dp"
+   	    	    android:background="@android:color/darker_gray" />
+   	    
+		           <TextView
+		               android:id="@+id/tvNoteMessage"
+		               android:layout_width="0dp"
+		               android:layout_height="wrap_content"
+		               android:layout_alignParentLeft="true"
+		               android:layout_weight="0.6"
+		               android:gravity="center_vertical"
+		               android:text="note message"
+		               android:textColor="@color/ecare_gray"
+		               android:textSize="22sp" />
+		           
+		           <View
+		               android:layout_width="1dp"
+		               android:layout_height="40dp"
+		               android:layout_gravity="center_vertical"
+		               android:layout_marginLeft="5dp"
+		               android:layout_marginRight="5dp"
+		               android:background="@android:color/darker_gray" />
+		           
+		           <TextView
+		               android:id="@+id/tvNoteDate"
+		               android:layout_width="0dp"
+		               android:layout_height="wrap_content"
+		               android:layout_alignParentRight="true"
+		               android:layout_weight="0.2"
+		               android:gravity="center_vertical|right"
+		               android:text="note date"
+		               android:textColor="@color/ecare_gray"
+		               android:textSize="22sp" />
+
+		           <View
+		               android:layout_width="1dp"
+		               android:layout_height="40dp"
+		               android:layout_gravity="center_vertical"
+		               android:layout_marginLeft="5dp"
+		               android:layout_marginRight="5dp"
+		               android:background="@android:color/darker_gray" />
+		           
+		           <Button
+		               android:id="@+id/viewNoteButton"
+		               android:layout_width="0dp"
+		               android:layout_height="fill_parent"
+		               android:layout_marginRight="10dp"
+		               android:layout_toRightOf="@+id/tvNoteDate"
+		               android:layout_weight="0.1"
+		               android:text="Voir note" />
+
+		           <Button
+		               android:id="@+id/deleteNoteButton"
+		               android:layout_width="0dp"
+		               android:layout_height="fill_parent"
+		               android:layout_marginRight="10dp"
+		               android:layout_weight="0.1"
+		               android:text="Supprimer note" />
+
+	</LinearLayout>
+</TableRow>

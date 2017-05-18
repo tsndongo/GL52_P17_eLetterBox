@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.semantic.ecare_android_v2"
+    android:versionCode="2"
+    android:versionName="1.8" >
+
+    <uses-sdk
+        android:minSdkVersion="14"
+        android:targetSdkVersion="21" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/Theme.ecare" >
+        <activity
+            android:name="com.semantic.ecare_android_v2.ui.SplashScreen"
+            android:label="@string/title_activity_splash_screen"
+            android:launchMode="singleTask"
+            android:screenOrientation="landscape" >
+            <!--Single Task = only one instance of splash screen can be created -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--DEfined that SpashScreen is the main class  -->
+        </activity>
+        <activity
+            android:name="com.semantic.ecare_android_v2.ui.MainActivity"
+            android:label="@string/title_activity_main"
+            android:launchMode="singleTask"
+           >
+        </activity>
+        <activity
+            android:name="com.semantic.ecare_android_v2.ui.WaitActivity"
+            android:launchMode="singleTask"
+            >
+        </activity>
+        <activity
+            android:name="com.semantic.ecare_android_v2.ui.WaitActivityPatient"
+            android:launchMode="singleTask">
+        </activity>
+        <activity
+            android:name="com.semantic.ecare_android_v2.ui.ErrorActivity"
+            android:launchMode="singleTask"
+             >
+        </activity>
+        <activity
+            android:name="com.semantic.ecare_android_v2.ui.AlertActivity"
+            android:launchMode="singleTask"
+             >
+        </activity>
+        <activity
+            android:name="com.semantic.ecare_android_v2.ui.MeasureActivity"
+            android:launchMode="singleTask"
+
+         >
+        </activity>
+        <activity
+            android:name="com.semantic.ecare_android_v2.ui.ChartActivity"
+            android:launchMode="singleTask"
+             >
+        </activity>
+        <activity
+            android:name="com.semantic.ecare_android_v2.ui.MeasureSetPatientActivity"
+            android:launchMode="singleTask"
+            >
+        </activity>
+        <activity
+            android:name="com.semantic.ecare_android_v2.ui.AboutActivity"
+            android:launchMode="singleTask"
+            >
+        </activity>
+        <activity
+            android:name="com.semantic.ecare_android_v2.ui.DebugActivity"
+            android:launchMode="singleTask"
+           >
+        </activity>
+ 		<activity
+            android:name="com.semantic.ecare_android_v2.ui.ExceptActivity"
+            android:launchMode="singleTask"
+             >
+        </activity>
+         <activity
+            android:name="com.semantic.ecare_android_v2.ui.DeviceUnactivedActivity"
+            android:launchMode="singleTask"
+      >
+        </activity>
+  		<activity
+            android:name="com.semantic.ecare_android_v2.ui.DeviceUnaffectedActivity"
+            android:launchMode="singleTask"
+            >
+        </activity>
+         <activity
+            android:name="com.semantic.ecare_android_v2.ui.DeviceUnsupportedActivity"
+            android:launchMode="singleTask"
+         >
+        </activity>
+  		<activity
+  		    android:name="com.semantic.ecare_android_v2.ui.ServerExceptActivity"
+            android:launchMode="singleTask"
+            >
+  		</activity>
+  		<activity
+  		    android:name="com.semantic.ecare_android_v2.ui.NoteDialogActivity"
+            android:launchMode="singleTop"
+
+            android:theme="@android:style/Theme.Dialog" >
+  		</activity>
+        <activity
+  		    android:name="com.semantic.ecare_android_v2.ui.AllNotesActivity"
+            android:launchMode="singleTask"
+            >
+  		</activity>
+
+        <!--Added for testing-->
+        <activity android:name="com.semantic.ecare_android_v2.ui.NoteListActivity"
+            android:launchMode="singleTask"></activity>
+
+        <service
+            android:name="com.signove.health.service.HealthService"
+            android:enabled="true"
+            android:exported="true"
+            android:permission="android.permission.BLUETOOTH"
+            android:stopWithTask="false" >
+            <intent-filter>
+                <!--Enable : définie if the service can be instanciate by the app
+                 Exporte: deini if the applicatoin can interact with the service-->
+
+                <action android:name="com.signove.health.service.HealthService" />
+            </intent-filter>
+        </service>
+        <service android:name="com.signove.health.service.BluetoothHDPService" />
+        <service android:name="com.semantic.ecare_android_v2.core.ServiceEcare" >
+        </service>
+        <service android:name="com.semantic.ecare_android_v2.core.ServiceAntidoteClient" >
+        </service>
+
+git
+    </application>
+
+
+</manifest>
